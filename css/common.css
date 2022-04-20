@@ -22,9 +22,14 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
-.grid {
- background-color: DodgerBlue;
+.gallery {
+ background-color: rgb(170, 201, 233);
  display: flex;
-  flex-flow: column;
-  align-items: baseline;
+ flex-wrap: wrap;
+ padding: 0 avto;
 }
+
+.grid{
+  margin-left: 40px;
+  margin-right: 40px;
+  list-style: none;}
