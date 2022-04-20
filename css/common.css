@@ -22,3 +22,9 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+.grid {
+ background-color: DodgerBlue;
+ display: flex;
+  flex-flow: column;
+  align-items: baseline;
+}
