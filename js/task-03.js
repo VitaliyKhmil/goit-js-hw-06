@@ -12,10 +12,7 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-const imageGallery = document.querySelector(`.gallery`);
-imageGallery.classList.add(`grid`);
-images.map(image => {
-  const imgGallery =  `<li><img src=" ${image.url} " alt=" ${image.alt} "</li>`;
-    document.querySelector(".gallery").insertAdjacentHTML("afterbegin", imgGallery);
-    });
-
+const imageGallery = document.querySelector('.gallery');
+imageGallery.classList.add('grid');
+const elements = images.map(image => { return `<li><img src=" ${image.url} " alt=" ${image.alt} "</li>`;})
+imageGallery.insertAdjacentHTML("afterbegin", elements.join(''));
