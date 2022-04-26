@@ -5,7 +5,7 @@ const input = document.getElementById('name-input');
 input.addEventListener('input', onInputChange)
 
 function onInputChange(event){
-    if (event.currentTarget.value === ""){
+    if (!event.currentTarget.value){
        spanName.textContent = "Anonymous";
     }
     else {        
